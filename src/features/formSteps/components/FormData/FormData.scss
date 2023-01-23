@@ -1,0 +1,140 @@
+.FormData {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+  &__title {
+    color: #07094e;
+    margin: 24px 0 0;
+  }
+
+  &__description {
+    color: #8b8a9a;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  &__label {
+    color: #07094e;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__field {
+    margin-top: 8px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #8b8a9a;
+    border-radius: 16px;
+    padding: 8px;
+  }
+
+  &__form {
+    margin: 0;
+  }
+
+  &__buttomContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      
+      justify-content: flex-end;
+    }
+  }
+
+  &__backButton {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #07094e;
+    fill: #07094e;
+    cursor: pointer;
+    grid-area: 1 / 1 / 2 / 3;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  &__group {
+    margin-top: 16px;
+
+    &.checkbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 300px;
+
+      input {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__nextButton {
+    height: 50px;
+    background-color: rgb(124, 1, 255);
+    border: 2px solid rgb(124, 1, 255);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 16px 12px;
+    border-radius: 16px;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+    grid-area: 1 / 3 / 2 / 5;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      padding: 16px 32px;
+      margin-left: 32px;
+    }
+
+    &:hover {
+      border-color: #07094e;
+    }
+  }
+
+  &__resumeButton {
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid rgb(124, 1, 255);
+    color: rgb(124, 1, 255);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 16px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    color: rgb(124, 1, 255);
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 5;
+    margin-top: 16px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    &:hover {
+      border-color: #07094e;
+      color: #07094e;
+    }
+  }
+}

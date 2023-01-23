@@ -1,0 +1,64 @@
+.FormStep {
+  &__wrapper {
+    padding: 100px 16px 0;
+
+    @media screen and (min-width: 576px) {
+      margin: auto;
+      max-width: 540px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+    }
+    @media screen and (min-width: 1400px) {
+      max-width: 1320px;
+    }
+  }
+  &__buttom {
+    display: block;
+    padding: 0px 16px;
+    min-height: 32px;
+    background: transparent;
+    border-radius: 100px;
+    border: 2px solid rgb(124, 1, 255);
+    margin: 15px 24px 15px 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    height: auto;
+    text-decoration: none;
+    line-height: 32px;
+    color: rgb(124, 1, 255);
+  }
+
+  &__row {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+  }
+
+  &__col {
+    &--1 {
+      grid-area: 1 / 1 / 2 / 5;
+    }
+    &--2 {
+      grid-area: 1 / 5 / 2 / 7;
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}

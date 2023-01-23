@@ -1,0 +1,119 @@
+.Hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (min-width: 576px) {
+      margin: auto;
+      align-items: flex-start;
+      max-width: 540px;
+      text-align: left;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+    }
+    @media screen and (min-width: 1400px) {
+      max-width: 1320px;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    line-height: 11px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 44px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 58px;
+      line-height: 60px;
+      min-width: 435px;
+    }
+  }
+
+  h4 {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    max-width: 90%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 435px;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__buttom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 4px;
+    text-decoration: none;
+    border: none;
+    span {
+      padding: 15px;
+      width: 100%;
+      align-items: center;
+      background: #7c01ff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      outline: none;
+      color: rgb(255, 255, 255);
+      letter-spacing: 0.04em;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 700;
+      @media screen and (min-width: 768px) {
+        width: 172px;
+      }
+    }
+  }
+}

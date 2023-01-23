@@ -1,0 +1,53 @@
+.StepBar {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cbccda;
+  padding: 16px;
+  border-radius: 20px;
+
+  &__item {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+    &__icon {
+      background-color: #f5f1ff;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: rgb(124, 1, 255);
+    }
+
+    &__info {
+      padding-left: 8px;
+      b {
+        color: rgb(124, 1, 255);
+        font-size: 10px;
+        @media screen and (min-width: 992px) {
+          font-size: 14px;
+        }
+      }
+      h3 {
+        margin: 0;
+        font-size: 14px;
+        color: #07094e;
+        @media screen and (min-width: 992px) {
+            font-size: 16px;
+          }
+      }
+    }
+
+    &.active {
+      display: flex;
+      justify-content: center;
+      .StepBar__item__icon {
+        background-color: rgb(124, 1, 255);
+        fill: #ffffff;
+      }
+    }
+  }
+}

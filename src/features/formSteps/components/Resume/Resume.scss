@@ -1,0 +1,26 @@
+.Resume {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #b1b1b1;
+    margin-top: 24px;
+    border-radius: 16px;
+    min-height: 300px;
+
+    &__title {
+        color: #07094e;
+        margin: 0 0 24px;
+    }
+
+    &__item {
+        color: #8b8a9a;
+        font-size: 14px;
+        padding: 2px 0;
+
+        &__label {
+            color: #07094e;
+
+            font-weight: 700;
+        }
+    }
+}
